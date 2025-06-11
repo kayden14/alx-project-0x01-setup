@@ -28,6 +28,7 @@ export interface UserProps {
     bs: string;
   };
 }
+
 export interface PostData {
   userId: number;
   id?: number;
@@ -39,6 +40,7 @@ export interface PostModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
 }
+
 // interfaces/index.ts
 
 export interface UserData {
@@ -68,4 +70,10 @@ export interface UserData {
 export interface UserModalProps {
   onClose: () => void;
   onSubmit: (user: UserData) => void;
+}
+
+// ✅ Optional: if needed for compatibility with UserProps instead
+export interface UserModalPropsWithUserProps {
+  onClose: () => void;
+  onSubmit: (user: UserProps) => void;
 }
