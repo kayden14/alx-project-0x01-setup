@@ -1,7 +1,15 @@
-const UsersPage: React.FC = () => (
-  <div>
-    <h1 className="text-3xl">Users Page</h1>
-  </div>
-);
+import Header from "@/components/layout/Header";
 
-export default UsersPage;
+const Users: React.FC = () => {
+  return (
+    <div>
+      <Header />
+      <main className="p-8">
+        <h1 className="text-3xl font-bold">Users Page</h1>
+        <p className="mt-4">This is where user information will appear.</p>
+      </main>
+    </div>
+  );
+};
+
+export default Users;
